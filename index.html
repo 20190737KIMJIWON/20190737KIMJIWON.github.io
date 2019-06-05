@@ -25,20 +25,21 @@
 		padding-top: 20px;
 	}
 	#top{
-		margin: 30px 20px 0 0;
+		
 		text-align: right;
+		
 	}
 	nav{
 		width: 100%;
-		height: 50px;
+		height: 40px;
 		margin-top: 10px;
-		padding-top: 20px;
+		padding-bottom: 50px;
 		text-align: center;
 	}
 	nav li{
 		display: inline;
-		padding: 0 20px;
-		margin: 0 20px;
+		
+		margin: 0 10px;
 		font-size: 20px;
 	}
 	li{
@@ -61,7 +62,7 @@
 	aside{
 		float: left;
 		margin-left: 100px;
-		background: linear-gradient(#aaf,#eeeeee);
+		
 	}
 	aside li{
 		padding: 40px 60px;
@@ -80,6 +81,12 @@
 		float: right;
 		margin: 30px 0 0 180px;
 	}
+	.btns{
+		padding: 38px 55px;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+	}
 </style>
 </head>
 <body>
@@ -89,16 +96,16 @@
 		<h1>국내 여행지 추천</h1>
 	</div>
 	<div id='top'>
-		<!--로그인ㅣ회원가입ㅣ마이페이지ㅣ고객센터-->
+		로그인ㅣ회원가입ㅣ마이페이지ㅣ고객센터
 	</div>
 </header>
 <nav>
 	<ul>
-		<li><input type="button" value="테마 여행"></li>
-		<li><input type="button" value="지역 여행"></li>
-		<li><input type="button" value="여행 정보"></li>
-		<li><input type="button" value="특별 혜택"></li>
-		<li><input type="button" value="이벤트"></li>
+		<li><a href="https://www.naver.com"><input type="button" value="테마 여행" class="btns btns1"></a></li>
+		<li><a href="https://www.naver.com"><input type="button" value="지역 여행" class="btns btns2"></a></li>
+		<li><a href="https://www.naver.com"><input type="button" value="여행 정보" class="btns btns3"></a></li>
+		<li><a href="https://www.naver.com"><input type="button" value="특별 혜택" class="btns btns4"></a></li>
+		<li><a href="https://www.naver.com"><input type="button" value="이벤트" class="btns btns5"></a></li>
 	</ul>
 </nav>
 <div class="clear"></div>
@@ -107,10 +114,10 @@
 </section>
 <aside>
 	<ul>
-		<li style="background-color: #f99; color: white; font-weight: bold;">테마여행</li>
-		<li style="background-color: #9c9; color: white; font-weight: bold;">지역여행</li>
-		<li style="background-color: #55f; color: white; font-weight: bold;">특별혜택</li>
-		<li style="background-color: #99c; color: white; font-weight: bold; text-align: center;">이벤트</li>
+		<li style="background-color: #f99; color: white; font-weight: bold; margin-bottom: 20px; cursor: pointer;">테마여행</li>
+		<li style="background-color: #9c9; color: white; font-weight: bold; margin-bottom: 20px; cursor: pointer;">지역여행</li>
+		<li style="background-color: #55f; color: white; font-weight: bold; margin-bottom: 20px; cursor: pointer;">특별혜택</li>
+		<li style="background-color: #99c; color: white; font-weight: bold; text-align: center; margin-bottom: 20px; cursor: pointer;">이벤트</li>
 	</ul>
 </aside>
 <div class="clear"></div>
