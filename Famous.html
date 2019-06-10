@@ -76,7 +76,12 @@
 	aside li{
 		padding: 30px 40px;
 		border: solid 2px #fff;
+		transition: transform 1.5s;
 	} 
+	aside li:hover{
+		font-weight: bold;
+		transform: skewX(20deg);
+	}
 	aside a{
 		text-decoration-line: none;
 		color: white;
@@ -84,10 +89,6 @@
 	header a{
 		text-decoration-line: none;
 		color: black;
-	}
-	aside li:hover{
-		font-weight: bold;
-		transform: skewX(10deg);
 	}
 	footer{
 		width: 100%;
