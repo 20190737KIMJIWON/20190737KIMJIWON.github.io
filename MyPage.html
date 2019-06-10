@@ -30,10 +30,8 @@
 		text-align: center;
 		padding-top: 20px;
 	}
-	#top{
-		
+	#top{	
 		text-align: right;
-		
 	}
 	nav{
 		width: 100%;
@@ -42,20 +40,32 @@
 		padding-bottom: 20px;
 		text-align: center;
 		background-position: fixed;
-		
+		margin: 0 5px;
 	}
 	nav li{
 		display: inline;
 		background-position: fixed;
 		font-size: 20px;
-		
+	}
+	.dropdown{
+		display: inline-block;
+	}
+	.dropdownContents{
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		width: 200px;
+		padding: 30px 30px;
+		opacity: 0.8;
+	}
+	.dropdown:hover .dropdownContents{
+		display: block;
 	}
 	li{
 		list-style-type: none;
 	}
 	section{
 		margin: 10px 20px;
-		float: left;
 		padding-top: 40px;
 	}
 	.main{
@@ -71,7 +81,6 @@
 		float: left;
 		margin-left: 100px;
 		margin-top: 150px;
-
 	}
 	aside li{
 		padding: 30px 40px;
@@ -115,19 +124,23 @@
 		font-weight: bold;
 	}
 	form{
-		margin: 100px 450px;
-		padding: 10px;
-		border: 1px;
+		margin: 10px 710px;
+		padding: 30px;
+		border: 15px double #ada;
+		text-align: center;
 	}
 	form h2{
-		padding: 0 150px;
+		text-align: center;
 	}
 	td{
 		padding-top: 30px;
 	}
 	.table1{
-		padding: 10px 200px;
-
+		padding: 10px 25px;
+		
+	}
+	tr td{
+		display: inline;
 	}
 </style>
 </head>
@@ -138,19 +151,82 @@
 		<h1><a href="index.html">국내 맛집 추천</a></h1>
 	</div>
 	<div id='top'>
-		<a href="./MyPage.html">회원가입</a>
+		<a href="./MyPage.html">회원가입/로그인</a>
 	</div>
 </header>
 <nav>
-	<ul>
-		<li><a href="index.html"><input type="button" value="추천 한식집" class="btns btns1"></a></li>
-		<li><input type="button" value="추천 바" class="btns btns2"></li>
-		<li><input type="button" value="저렴한 맛집" class="btns btns3"></li>
-		<li><input type="button" value="디저트" class="btns btns4"></li>
-		<li><input type="button" value="이벤트 더보기" class="btns btns5"></li>
-	</ul>
-</nav>
 
+	<div class="dropdown"> 
+
+		<ul> <a href="Famous.html"><input type="button" value="추천 한식집" class="btns btns1"></a> </ul>
+
+			<div class="dropdownContents">
+
+			<li>가장 추천하는 한식집 입니다.</li>
+
+			</div>
+
+	</div>
+
+	<div class="dropdown">
+
+		<ul><a href="Bar.html"><input type="button" value="추천 바" class="btns btns2"></a></ul>
+
+			<div class="dropdownContents">
+
+			<li>가장 추천하는 바 입니다.</li>
+
+			</div>
+
+	</div>
+
+	<div class="dropdown">
+
+		<ul><a href="Cheap.html"><input type="button" value="저렴한 맛집" class="btns btns3"></a></ul>
+
+			<div class="dropdownContents">
+
+			<li>저렴하고 맛있는 음식점을 추천해드립니다.</li>
+
+			</div>
+
+	</div>
+
+	<div class="dropdown">
+
+		<ul><input type="button" value="디저트" class="btns btns4"></ul>
+
+			<div class="dropdownContents">
+
+			<li>가장 추천하는 디저트 가게입니다.</li>
+
+			</div>
+
+	</div>
+
+	<div class="dropdown">
+
+		<ul><input type="button" value="이벤트 더보기" class="btns btns5"></ul>
+
+			<div class="dropdownContents">
+
+			<li>현재 진행 중인 이벤트가 없습니다.</li>
+
+			</div>
+
+	</div>
+
+	</li>
+
+</div>
+
+	</ul>
+
+	</div>
+
+</nav>
+<div class="clear"></div>
+<section>
 <form>
 	<h2>회원가입</h2><br>
 <div class="table1">
@@ -189,7 +265,17 @@
 </table>
 </div>
 </form>
+</section>
 
+<div class="clear"></div>
+<section>
+	<form>
+		<h2>로그인</h2><br>
+			ID : <input type="text" value="Dongyang" size=10><br><br>
+			PW : <input type="password"><br><br>
+			<input type="button" value="확인">
+	</form>
+</section>
 <div class="clear"></div>
 <footer>
 	<div id="address">
