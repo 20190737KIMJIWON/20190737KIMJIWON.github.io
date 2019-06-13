@@ -72,15 +72,30 @@
 	#main1{
 		float: left;
 		padding-left: 50px;
+		
+	}
+	#main1:hover{
+		transform: translate(150px, 100px);
+		transition-timing-function: ease-out;
+		transition: width 2s, height, transform 2s;
 	}
 	#main2{
 		float: left;
-		padding-left: 420px;
-		margin-left: 400px;
+		padding-left: 50px;
+	}
+	#main2:hover{
+		transform: rotate(360deg);
+		transition-timing-function: ease-out;
+		transition: width 2s, height, transform 2s;
 	}
 	#main3{
 		float: left;
 		padding-left: 50px;
+	}
+	#main3:hover{
+		transform: skewX(50deg);
+		transition-timing-function: ease-out;
+		transition: width 2s, height, transform 2s;
 	}
 	aside{
 		float: left;
@@ -127,6 +142,13 @@
 	}
 	.btns:hover{
 		font-weight: bold;
+	}
+	body {
+		background:url("./img/map.PNG") no-repeat fixed right;
+		filter:alpha(opacity=60);
+	}	
+	table, td {
+		background-color:transparent;
 	}
 </style>
 </head>
@@ -186,15 +208,15 @@
 </aside>-->
 <div class="clear"></div>
 <section id="main1">
-	<img src="./img/han0.jpg" width="1000" height="600" style="border: solid 15px #aaddaa;">
+	<img src="./img/han0.jpg" width="900" height="550" style="border: solid 15px #aaddaa;">
 </section>
 <div class="clear"></div>
 <section id="main2">
-	<img src="./img/han1.jpg" width="1000" height="600" style="border: solid 15px #aaddaa;">
+	<img src="./img/han1.jpg" width="900" height="550" style="border: solid 15px #aaddaa;">
 </section>
 <div class="clear"></div>
 <section id="main3">
-	<img src="./img/han2.jpg" width="1000" height="600" style="border: solid 15px #aaddaa;">
+	<img src="./img/han2.jpg" width="900" height="550" style="border: solid 15px #aaddaa;">
 </section>
 <div class="clear"></div>
 <footer>
@@ -205,6 +227,7 @@
 	<div id="customer">
 		문의전화: 010-6701-6015
 	</div>
+
 </footer>
 </body>
 </div>
