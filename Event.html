@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>국내 맛집 추천</title>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.clear{
+		clear: both;
+	}
+	#page{
+		width: 100%;
+		margin: auto;
+	}
+	header{
+		width: 100%;
+		height: 100px;
+		background-color: #eeffee;
+	}
+	header h1{
+		text-decoration-line: none;
+		color: black;
+	}
+	header h1:hover{
+		cursor: pointer;
+	}
+	#logo{
+		text-align: center;
+		padding-top: 20px;
+	}
+	#top{	
+		text-align: right;
+	}
+	nav{
+		width: 100%;
+		height: 40px;
+		margin-top: 10px;
+		padding-bottom: 20px;
+		text-align: center;
+		background-position: fixed;
+		margin: 0 5px;
+	}
+	nav li{
+		display: inline;
+		background-position: fixed;
+		font-size: 20px;
+	}
+	.dropdown{
+		display: inline-block;
+	}
+	.dropdownContents{
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		width: 200px;
+		padding: 30px 30px;
+		opacity: 0.8;
+	}
+	.dropdown:hover .dropdownContents{
+		display: block;
+	}
+	li{
+		list-style-type: none;
+	}
+	section{
+		margin: 10px 20px;
+		float: left;
+		padding-top: 40px;
+	}
+	#main1{
+		float: left;
+		padding-left: 530px;
+	}
+	.quiz{
+		border-right: solid 10px #aea;
+		border-left: solid 10px #aea;
+		border-radius: 30px;
+		padding: 50px 200px;
+	}
+	aside{
+		float: left;
+		margin-left: 100px;
+		margin-top: 150px;
+	}
+	aside li{
+		padding: 30px 40px;
+		border: solid 2px #fff;
+		transition: transform 1.5s;
+	} 
+	aside li:hover{
+		font-weight: bold;
+		transform: skewX(20deg);
+	}
+	aside a{
+		text-decoration-line: none;
+		color: white;
+	}
+	header a{
+		text-decoration-line: none;
+		color: black;
+	}
+	footer{
+		width: 100%;
+		height: 100px;
+		background-color: #eef;
+		margin: 40px 0 0 0; 
+	}
+	#address{
+		float: left;
+		margin: 30px 0 0 20px;
+	}
+	#customer{
+		float: right;
+		margin: 30px 0 0 180px;
+	}
+	.btns{
+		padding: 38px 55px;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.btns:hover{
+		font-weight: bold;
+	}
+	.quiz1{
+		padding: 20px;
+		text-decoration-line: none;
+		color: black;
+	}
+	.quiz1:hover{
+		cursor: pointer;
+		transform: translate(0px, -1000px);
+		transition-timing-function: ease-in;
+		transition: width 2s, height, transform 3s;
+	}
+	.quiz2{
+		padding: 20px;
+		text-decoration-line: none;
+		color: black;
+	}
+	.quiz2:hover{
+		cursor: pointer;
+		transform: scale(1.5,1.5);
+		transition-timing-function: ease-in;
+		transition: width 2s, height, transform 1s;
+	}
+	.quiz2:active{
+		background: #9be;
+	}
+</style>
+</head>
+<body>
+	<div id='page'>
+<header>
+	<div id='logo'>
+		<h1><a href="index.html">국내 맛집 추천</a></h1>
+	</div>
+	<div id='top'>
+		<a href="./MyPage.html">회원가입/로그인</a>
+	</div>
+</header>
+<nav>
+	<div class="dropdown"> 
+		<ul> <a href="Famous.html"><input type="button" value="추천 한식집" class="btns btns1"></a> </ul>
+			<div class="dropdownContents">
+			<li>가장 추천하는 한식집 입니다.</li>
+			</div>
+	</div>
+	<div class="dropdown">
+		<ul><a href="Bar.html"><input type="button" value="추천 바" class="btns btns2"></a></ul>
+			<div class="dropdownContents">
+			<li>가장 추천하는 바 입니다.</li>
+			</div>
+	</div>
+	<div class="dropdown">
+		<ul><a href="Cheap.html"><input type="button" value="저렴한 맛집" class="btns btns3"></a></ul>
+			<div class="dropdownContents">
+			<li>저렴하고 맛있는 음식점을 추천해드립니다.</li>
+			</div>
+	</div>
+	<div class="dropdown">
+		<ul><a href="Dessert.html"><input type="button" value="디저트" class="btns btns4"></a></ul>
+			<div class="dropdownContents">
+			<li>가장 추천하는 디저트 가게입니다.</li>
+			</div>
+	</div>
+	<div class="dropdown">
+		<ul><a href="Event.html"><input type="button" value="이벤트 더보기" class="btns btns5"></a></ul>
+			<div class="dropdownContents">
+			<li>현재 한 가지의 이벤트가 있습니다.</li>
+			</div>
+	</div>
+	</li>
+</div>
+	</ul>
+	</div>
+</nav>
+<div class="clear"></div>
+
+<!--<aside>
+	<ul>
+		<li style="background-color: #f99; color: white; font-size: 18px; margin-bottom: 10px; cursor: pointer;"><a href="#main1">평점BEST</a></li>
+		<li style="background-color: #9c9; color: white; font-size: 18px; margin-bottom: 10px; cursor: pointer;">점심BEST</li>
+		<li style="background-color: #55f; color: white; font-size: 18px; margin-bottom: 10px; cursor: pointer;">저녁BEST</li>
+		<li style="background-color: #99c; color: white; font-size: 18px; text-align: center; margin-bottom: 20px; cursor: pointer;">진행중인 이벤트</li>
+	</ul>
+</aside>-->
+<div class="clear"></div>
+
+<section id="main1">
+	<div class="quiz">
+		<img src="./img/logo.jpg" width="400" style="border-radius: 30px;"><br>
+			<h1>&nbsp;6월 한정 퀴즈 이벤트에 참여하세요!</h1><p>
+			<div class="clear"></div>
+	</div>
+	<fieldset align="center" style="border: dotted 10px #aea; margin: 30px 0 0 0;">
+		<legend align="center">
+			<h1> &nbsp;&nbsp;QUIZ&nbsp;&nbsp; </h1>
+		</legend>
+		<br>
+		<h3>𝑥=(−𝑏±√(𝑏^2−4𝑎𝑐))/2𝑎는 무엇일까요?</h3>
+		<section class="quiz1" style="background: #faa; border-radius: 20px; margin-left: 70px;"> 이항정리 </section>
+		<section class="quiz1" style="background: #ffa; border-radius: 20px;"> 삼각함수 관련 공식 </section>
+		<section class="quiz1" style="background: #afa; border-radius: 20px;"> 피타고라스의 정리 </section>
+		<a href="correct"><section class="quiz2" style="background: #adf; border-radius: 20px;"> 근의 공식 </section></a>
+	</fieldset>
+			
+	</div>
+</section>
+
+<div class="clear"></div>
+<footer>
+	<div id="address">
+		대표: 김지원<br>
+		관련학과: 동양미래대학교 컴퓨터정보공학과
+	</div>
+	<div id="customer">
+		문의전화: 010-6701-6015
+	</div>
+</footer>
+</body>
+</div>
+</html>
